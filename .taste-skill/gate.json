@@ -1,0 +1,240 @@
+{
+ "start": "2026-11-15T08:29:57.606Z",
+ "round": 1,
+ "idle": 0,
+ "errors": 0,
+ "status": "pass",
+ "history": [
+  {
+   "at": "2026-11-15T08:42:50.498Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 2,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T08:46:17.879Z",
+   "mode": "manual",
+   "status": "pass",
+   "fails": 0,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "dist/index.html",
+  "url": null,
+  "root": "dist",
+  "kind": "service",
+  "category": "software development portfolio",
+  "primary": "See projects",
+  "rounds": 3,
+  "start": "2026-11-15T08:29:57.606Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "8083a45215bc38bf:29f2c4dd",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "f1c43ea89851b971",
+ "page": "dist/index.html",
+ "found": {
+  "fails": [
+   {
+    "check": "no-visual",
+    "where": "section#experience \"Experience & competitions.\"",
+    "msg": "pictures, effects and mocks cover 11% of this section; a feature section needs a visual (about 25% or more)",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "no-visual"
+    ],
+    "wheres": [
+     "section#experience \"Experience & competitions.\""
+    ]
+   },
+   {
+    "check": "copy-headings",
+    "where": "section#selected-work > div.wrap > div.section-head > h2 \"Selected projects.\"",
+    "msg": "\"Selected projects.\" names no product, part, place or section (10 headings like it; at most one brand line per page) (and 9 more like it: \"Carlee\", \"BasuraScan\", \"Rush Gym Wear\", \"Experience & competition\", ...)",
+    "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "copy-headings"
+    ],
+    "wheres": [
+     "section#selected-work > div.wrap > div.section-head > h2 \"Selected projects.\""
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "scroll-reveal",
+    "where": "section#about > div.wrap > p.mo-wh__text \"My work spans independent software devel\"",
+    "msg": "starts \"color\" (0.2 s) the moment it is scrolled into view (an IntersectionObserver) on span.mo-w:nth-of-type(1) (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)",
+    "fix": "show it at rest: no fade, rise or unmask when it is scrolled into view",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "main#main > section.hero.hero--split / section#selected-work",
+    "msg": "uneven space at the edge of a band: 122px outside its edge, 64px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-set",
+    "where": "div.hero-text.grid > div.hero__media.span-6 > div.hero-portrait.m-zoom > img \"dominic-yap.jpg\"",
+    "msg": "2 photographs in more than one look: lightness from 0.06 to 0.47; the odd one out is dominic-yap.jpg",
+    "fix": "grade the photographs to one look (light, colour, warmth), or replace the odd one out",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "header.nav.nav--centre > div.wrap.nav__bar > a.skip-link \"Skip to content\"",
+    "msg": "\"Skip to content\" opens a section headed \"Dominic Yap. Software developer.\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "grounds",
+    "where": "section#selected-work \"Selected projects. Independent project C\"",
+    "msg": "4 flat grounds across the page (#e5edff section x2, #ffffff section, #efff9b section, #1754ef footer): three at most (the base, a surface, an inverse)",
+    "fix": "three flat grounds at most (the base, one surface, one inverse): lay the other bands on one of them",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "action-repeat",
+    "where": "header.nav.nav--centre > div.wrap.nav__bar > div.nav__actions > a.btn.btn--primary \"see projects\"",
+    "msg": "\"see projects\" shows 2 times on the first screen at 1440px (nav, hero): the nav's button and the hero's; nothing else on the screen may repeat it",
+    "fix": "show the action once a screen besides the nav's button: the hero's, the close's or the phone bar's, never all at once",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "no-visual",
+    "where": "section#selected-work \"Selected projects.\"",
+    "msg": "pictures, effects and mocks cover 25% of this section; a feature section needs a visual (about 25% or more)",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "heading-scale",
+    "where": "div.work-list > article.work-row.card:nth-of-type(1) > div.work-row__title > h3 \"Carlee\"",
+    "msg": "the h3s (24px) are only 1.25x smaller than the h2s (30px): one level a clear step (1.3x or more) below the other",
+    "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#selected-work / section#experience",
+    "msg": "uneven space at the edge of a band: 48px outside its edge, 97px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-set",
+    "where": "div.hero-text.grid > div.hero__media.span-6 > div.hero-portrait.m-zoom > img \"dominic-yap-640.jpg\"",
+    "msg": "3 photographs in more than one look: lightness from 0.06 to 0.50; the odd one out is dominic-yap-640.jpg",
+    "fix": "grade the photographs to one look (light, colour, warmth), or replace the odd one out",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-stat-strip",
+    "msg": "stat strip x1",
+    "fix": "a strip only of figures the brief gives (a price, hours, a count); otherwise put each number in the sentence it proves, or leave it out (references/copy-tells.md)",
+    "widths": [],
+    "from": "copy",
+    "where": "copy x1: \"2025 / 2025 / 2025\"",
+    "exact": false
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 86,
+   "layout": 7
+  }
+ },
+ "open": [],
+ "waived": [
+  {
+   "check": "no-visual",
+   "where": "section#experience \"Experience & competitions.\"",
+   "msg": "pictures, effects and mocks cover 11% of this section; a feature section needs a visual (about 25% or more)",
+   "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "no-visual"
+   ],
+   "wheres": [
+    "section#experience \"Experience & competitions.\""
+   ],
+   "reason": "This section documents student leadership, freelance work, and named 2025 awards, rather than product features. Its sourced organization logos and real client screenshot are intentional evidence. Inventing team photographs or enlarging a logo wall would conflict with the original brief's authenticity and restrained achievement presentation."
+  },
+  {
+   "check": "copy-headings",
+   "where": "section#selected-work > div.wrap > div.section-head > h2 \"Selected projects.\"",
+   "msg": "\"Selected projects.\" names no product, part, place or section (10 headings like it; at most one brand line per page) (and 9 more like it: \"Carlee\", \"BasuraScan\", \"Rush Gym Wear\", \"Experience & competition\", ...)",
+   "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "copy-headings"
+   ],
+   "wheres": [
+    "section#selected-work > div.wrap > div.section-head > h2 \"Selected projects.\""
+   ],
+   "reason": "The grouped finding treats supplied proper project names (Carlee, BasuraScan, Rush Gym Wear), the actual Acting Vice President of Technology role, and the standard portfolio heading Selected projects as unnamed products. These names and titles come from the user's original brief and are intentionally preserved."
+  }
+ ],
+ "warnCount": 11,
+ "at": "2026-11-15T08:46:17.882Z"
+}

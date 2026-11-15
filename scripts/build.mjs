@@ -10,6 +10,7 @@ import {
   contact,
   caseStudy,
   escape,
+  notFound,
 } from "../src/templates.mjs";
 import { projects, profile } from "../src/content/site.mjs";
 const root = fileURLToPath(new URL("../", import.meta.url));
@@ -67,7 +68,7 @@ export async function build() {
       "/404/",
       "Page not found",
       "The requested page could not be found.",
-      '<header class="page-heading"><p class="eyebrow">404 / Page not found</p><h1>A wrong turn.</h1><p class="page-lead">This page doesn’t exist. The work is still right here.</p><p style="margin-top:30px"><a class="text-link" href="/">Back to home ↗</a></p></header>',
+      notFound(),
       "",
     ],
   ];

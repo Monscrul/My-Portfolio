@@ -1,0 +1,54 @@
+
+perf dist/index.html @ 1440px
+  PASS  host CPU load (before/after)               34/18 %        
+  PASS  total transfer                             624.4 KiB      html 3.9K  css 58.1K  js 47.9K  font 163.3K  img 346.8K  other 4.3K
+  PASS  requests                                   28             28 by load
+  PASS  images bytes                               346.8 KiB      9 files
+  PASS  largest image                              104.3 KiB      images/dominic-yap.jpg
+  PASS  JS parsed                                  130.3 KiB      7 files, 47.9K gz
+  PASS  CSS                                        58.1 KiB       7 files
+  PASS  font families                              2              Hanken Grotesk, Newsreader
+  PASS  font files                                 2              163.3K
+  WARN  font bytes                                 163.3 KiB      
+  PASS  images without width+height                0              
+  PASS  below-fold images not lazy                 0              9 marked lazy in the page source, set eager by system.js once the page has loaded
+  PASS  oversized images (natural > 2.2x shown)    0              
+  PASS  WebGL live at load                         0              
+  PASS  WebGL live at bottom                       0              
+  PASS  WebGL peak live                            0              0 contexts made in all
+  PASS  long tasks                                 0              runs 3, 0..0, max 0ms
+  PASS  blocking time                              0 ms           runs 3, 0..0 ms; at load 0ms
+  PASS  FCP (CPU, relative)                        168 ms         runs 3, 100..2948
+  PASS  LCP (CPU, relative)                        168 ms         runs 3, 100..2948, img
+  PASS  layout shift                               0.001          runs 3, 0.001..0.001; at load 0.001
+  PASS  modules loaded, never mounted              0              
+  PASS  broken requests                            0              
+  PASS  page height                                5 screens      DOM 270 nodes
+
+perf dist/index.html @ 390px
+  PASS  host CPU load (before/after)               34/18 %        
+  PASS  total transfer                             609 KiB        html 3.9K  css 57.7K  js 47.9K  font 162.8K  img 332.7K  other 3.9K
+  PASS  requests                                   28             28 by load
+  PASS  images bytes                               332.7 KiB      10 files
+  PASS  largest image                              95 KiB         images/dominic-yap-640.jpg
+  PASS  JS parsed                                  130.3 KiB      7 files, 47.9K gz
+  PASS  CSS                                        57.7 KiB       7 files
+  PASS  font families                              2              Hanken Grotesk, Newsreader
+  PASS  font files                                 2              162.8K
+  WARN  font bytes                                 162.8 KiB      
+  PASS  images without width+height                0              
+  PASS  below-fold images not lazy                 0              9 marked lazy in the page source, set eager by system.js once the page has loaded
+  WARN  oversized images (natural > 2.2x shown)    1              rush-home-1280.jpg 1024px for 342
+  PASS  WebGL live at load                         0              
+  PASS  WebGL live at bottom                       0              
+  PASS  WebGL peak live                            0              0 contexts made in all
+  PASS  long tasks                                 0              runs 3, 0..0, max 0ms
+  PASS  blocking time                              0 ms           runs 3, 0..0 ms; at load 0ms
+  PASS  FCP (CPU, relative)                        108 ms         runs 3, 80..124
+  PASS  LCP (CPU, relative)                        108 ms         runs 3, 80..124, img
+  PASS  layout shift                               0.000          runs 3, 0.000..0.000; at load 0.000
+  PASS  modules loaded, never mounted              0              
+  PASS  broken requests                            0              
+  PASS  page height                                6.1 screens    DOM 270 nodes
+
+SUMMARY dist/index.html: 0 FAIL, 3 WARN  -> WARN

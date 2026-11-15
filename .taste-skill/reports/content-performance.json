@@ -1,0 +1,304 @@
+{
+ "page": "dist/index.html",
+ "partial": false,
+ "results": [
+  {
+   "w": 1440,
+   "rows": [
+    {
+     "name": "host CPU load (before/after)",
+     "value": "34/18 %",
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "total transfer",
+     "value": "624.4 KiB",
+     "verdict": "PASS",
+     "note": "html 3.9K  css 58.1K  js 47.9K  font 163.3K  img 346.8K  other 4.3K"
+    },
+    {
+     "name": "requests",
+     "value": 28,
+     "verdict": "PASS",
+     "note": "28 by load"
+    },
+    {
+     "name": "images bytes",
+     "value": "346.8 KiB",
+     "verdict": "PASS",
+     "note": "9 files"
+    },
+    {
+     "name": "largest image",
+     "value": "104.3 KiB",
+     "verdict": "PASS",
+     "note": "images/dominic-yap.jpg"
+    },
+    {
+     "name": "JS parsed",
+     "value": "130.3 KiB",
+     "verdict": "PASS",
+     "note": "7 files, 47.9K gz"
+    },
+    {
+     "name": "CSS",
+     "value": "58.1 KiB",
+     "verdict": "PASS",
+     "note": "7 files"
+    },
+    {
+     "name": "font families",
+     "value": 2,
+     "verdict": "PASS",
+     "note": "Hanken Grotesk, Newsreader"
+    },
+    {
+     "name": "font files",
+     "value": 2,
+     "verdict": "PASS",
+     "note": "163.3K"
+    },
+    {
+     "name": "font bytes",
+     "value": "163.3 KiB",
+     "verdict": "WARN",
+     "note": ""
+    },
+    {
+     "name": "images without width+height",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "below-fold images not lazy",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "9 marked lazy in the page source, set eager by system.js once the page has loaded"
+    },
+    {
+     "name": "oversized images (natural > 2.2x shown)",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL live at load",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL live at bottom",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL peak live",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "0 contexts made in all"
+    },
+    {
+     "name": "long tasks",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "runs 3, 0..0, max 0ms"
+    },
+    {
+     "name": "blocking time",
+     "value": "0 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 0..0 ms; at load 0ms"
+    },
+    {
+     "name": "FCP (CPU, relative)",
+     "value": "168 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 100..2948"
+    },
+    {
+     "name": "LCP (CPU, relative)",
+     "value": "168 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 100..2948, img"
+    },
+    {
+     "name": "layout shift",
+     "value": "0.001",
+     "verdict": "PASS",
+     "note": "runs 3, 0.001..0.001; at load 0.001"
+    },
+    {
+     "name": "modules loaded, never mounted",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "broken requests",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "page height",
+     "value": "5 screens",
+     "verdict": "PASS",
+     "note": "DOM 270 nodes"
+    }
+   ]
+  },
+  {
+   "w": 390,
+   "rows": [
+    {
+     "name": "host CPU load (before/after)",
+     "value": "34/18 %",
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "total transfer",
+     "value": "609 KiB",
+     "verdict": "PASS",
+     "note": "html 3.9K  css 57.7K  js 47.9K  font 162.8K  img 332.7K  other 3.9K"
+    },
+    {
+     "name": "requests",
+     "value": 28,
+     "verdict": "PASS",
+     "note": "28 by load"
+    },
+    {
+     "name": "images bytes",
+     "value": "332.7 KiB",
+     "verdict": "PASS",
+     "note": "10 files"
+    },
+    {
+     "name": "largest image",
+     "value": "95 KiB",
+     "verdict": "PASS",
+     "note": "images/dominic-yap-640.jpg"
+    },
+    {
+     "name": "JS parsed",
+     "value": "130.3 KiB",
+     "verdict": "PASS",
+     "note": "7 files, 47.9K gz"
+    },
+    {
+     "name": "CSS",
+     "value": "57.7 KiB",
+     "verdict": "PASS",
+     "note": "7 files"
+    },
+    {
+     "name": "font families",
+     "value": 2,
+     "verdict": "PASS",
+     "note": "Hanken Grotesk, Newsreader"
+    },
+    {
+     "name": "font files",
+     "value": 2,
+     "verdict": "PASS",
+     "note": "162.8K"
+    },
+    {
+     "name": "font bytes",
+     "value": "162.8 KiB",
+     "verdict": "WARN",
+     "note": ""
+    },
+    {
+     "name": "images without width+height",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "below-fold images not lazy",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "9 marked lazy in the page source, set eager by system.js once the page has loaded"
+    },
+    {
+     "name": "oversized images (natural > 2.2x shown)",
+     "value": 1,
+     "verdict": "WARN",
+     "note": "rush-home-1280.jpg 1024px for 342"
+    },
+    {
+     "name": "WebGL live at load",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL live at bottom",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL peak live",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "0 contexts made in all"
+    },
+    {
+     "name": "long tasks",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "runs 3, 0..0, max 0ms"
+    },
+    {
+     "name": "blocking time",
+     "value": "0 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 0..0 ms; at load 0ms"
+    },
+    {
+     "name": "FCP (CPU, relative)",
+     "value": "108 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 80..124"
+    },
+    {
+     "name": "LCP (CPU, relative)",
+     "value": "108 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 80..124, img"
+    },
+    {
+     "name": "layout shift",
+     "value": "0.000",
+     "verdict": "PASS",
+     "note": "runs 3, 0.000..0.000; at load 0.000"
+    },
+    {
+     "name": "modules loaded, never mounted",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "broken requests",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "page height",
+     "value": "6.1 screens",
+     "verdict": "PASS",
+     "note": "DOM 270 nodes"
+    }
+   ]
+  }
+ ]
+}

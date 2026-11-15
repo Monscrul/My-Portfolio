@@ -1,0 +1,172 @@
+[
+ {
+  "vw": 1440,
+  "vh": 900,
+  "L": 80,
+  "R": 1360,
+  "nav": 72,
+  "screen": 900,
+  "hero": {
+   "height": 900,
+   "h1": {
+    "size": 62.328,
+    "leading": 1.02,
+    "lines": 1,
+    "x": 80,
+    "y": 158,
+    "w": 519,
+    "h": 64
+   },
+   "lead": {
+    "size": 20,
+    "lineHeight": 30,
+    "lines": 2,
+    "x": 80,
+    "y": 245,
+    "w": 470,
+    "h": 60
+   },
+   "buttons": {
+    "n": 2,
+    "h": 44,
+    "first": {
+     "x": 80,
+     "y": 337,
+     "w": 159,
+     "h": 44
+    }
+   },
+   "visual": {
+    "x": 732,
+    "y": 120,
+    "w": 628,
+    "h": 716
+   }
+  },
+  "sections": [
+   {
+    "where": "section.hero.hero--split section.hero.hero--split \"Applied AI · Research / Research\"",
+    "top": 0,
+    "height": 900,
+    "content": 716,
+    "frame": 0
+   },
+   {
+    "where": "#overview section.section.statement \"The project & my part.BasuraScan\"",
+    "top": 900,
+    "height": 900,
+    "content": 747,
+    "frame": 900
+   },
+   {
+    "where": "#development section.section \"Behind the build.These developme\"",
+    "top": 1800,
+    "height": 900,
+    "content": 560,
+    "frame": 1800
+   },
+   {
+    "where": "#outcome section.section \"Results & current status.Researc\"",
+    "top": 2700,
+    "height": 900,
+    "content": 453,
+    "frame": 2700
+   }
+  ],
+  "findings": [],
+  "size": "1440x900",
+  "overflowX": false,
+  "stress": {
+   "hero": "split",
+   "maxChars": 45,
+   "chars": 45,
+   "lines": 3,
+   "height": 900
+  }
+ },
+ {
+  "vw": 390,
+  "vh": 844,
+  "L": 24,
+  "R": 366,
+  "nav": 56,
+  "screen": 844,
+  "hero": {
+   "height": 844,
+   "h1": {
+    "size": 40.28,
+    "leading": 1.02,
+    "lines": 1,
+    "x": 24,
+    "y": 152,
+    "w": 342,
+    "h": 41
+   },
+   "lead": {
+    "size": 17.0054,
+    "lineHeight": 25.5081,
+    "lines": 2,
+    "x": 24,
+    "y": 217,
+    "w": 342,
+    "h": 51
+   },
+   "buttons": {
+    "n": 1,
+    "h": 44,
+    "first": {
+     "x": 24,
+     "y": 300,
+     "w": 342,
+     "h": 44
+    }
+   },
+   "visual": {
+    "x": 24,
+    "y": 388,
+    "w": 342,
+    "h": 432
+   }
+  },
+  "sections": [
+   {
+    "where": "section.hero.hero--split section.hero.hero--split \"Applied AI · Research / Research\"",
+    "top": 0,
+    "height": 844,
+    "content": 724,
+    "frame": 0
+   },
+   {
+    "where": "#overview section.section.statement \"The project & my part.BasuraScan\"",
+    "top": 844,
+    "height": 915,
+    "content": 771,
+    "frame": 844
+   },
+   {
+    "where": "#development section.section \"Behind the build.These developme\"",
+    "top": 1759,
+    "height": 911,
+    "content": 767,
+    "frame": 1759
+   },
+   {
+    "where": "#outcome section.section \"Results & current status.Researc\"",
+    "top": 2670,
+    "height": 893,
+    "content": 717,
+    "frame": 2670
+   }
+  ],
+  "findings": [],
+  "size": "390x844",
+  "overflowX": false,
+  "stress": {
+   "hero": "split",
+   "maxChars": 45,
+   "chars": 45,
+   "lines": 3,
+   "height": 844
+  }
+ }
+]

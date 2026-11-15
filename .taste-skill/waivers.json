@@ -1,0 +1,12 @@
+[
+  {
+    "check": "no-visual",
+    "target": "section#experience",
+    "reason": "This section documents student leadership, freelance work, and named 2025 awards, rather than product features. Its sourced organization logos and real client screenshot are intentional evidence. Inventing team photographs or enlarging a logo wall would conflict with the original brief's authenticity and restrained achievement presentation."
+  },
+  {
+    "check": "copy-headings",
+    "target": "section#selected-work > div.wrap > div.section-head > h2",
+    "reason": "The grouped finding treats supplied proper project names (Carlee, BasuraScan, Rush Gym Wear), the actual Acting Vice President of Technology role, and the standard portfolio heading Selected projects as unnamed products. These names and titles come from the user's original brief and are intentionally preserved."
+  }
+]

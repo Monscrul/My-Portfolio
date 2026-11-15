@@ -1,0 +1,278 @@
+[
+ {
+  "vw": 1440,
+  "vh": 900,
+  "L": 80,
+  "R": 1360,
+  "nav": 72,
+  "screen": 900,
+  "hero": {
+   "height": 900,
+   "h1": {
+    "size": 62.328,
+    "leading": 1.02,
+    "lines": 2,
+    "x": 80,
+    "y": 158,
+    "w": 519,
+    "h": 127
+   },
+   "lead": {
+    "size": 20,
+    "lineHeight": 30,
+    "lines": 3,
+    "x": 80,
+    "y": 309,
+    "w": 470,
+    "h": 90
+   },
+   "buttons": {
+    "n": 2,
+    "h": 44,
+    "first": {
+     "x": 80,
+     "y": 431,
+     "w": 157,
+     "h": 44
+    }
+   },
+   "visual": {
+    "x": 732,
+    "y": 120,
+    "w": 628,
+    "h": 716
+   }
+  },
+  "sections": [
+   {
+    "where": "section.hero.hero--split section.hero.hero--split \"About DominicA student ofsystems\"",
+    "top": 0,
+    "height": 900,
+    "content": 716,
+    "frame": 0
+   },
+   {
+    "where": "#education section.section \"The education so far.I’m interes\"",
+    "top": 900,
+    "height": 900,
+    "content": 526,
+    "frame": 900
+   },
+   {
+    "where": "#skills section.section \"Tools I’ve worked with.Programmi\"",
+    "top": 1800,
+    "height": 900,
+    "content": 649,
+    "frame": 1800
+   },
+   {
+    "where": "#personal-interests section.section.interests-section \"Outside the editor.Music, guitar\"",
+    "top": 2700,
+    "height": 900,
+    "content": 583,
+    "frame": 2700
+   },
+   {
+    "where": "#music section.section.statement \"Also in the mix: music.Outside t\"",
+    "top": 3600,
+    "height": 900,
+    "content": 528,
+    "frame": 3600
+   }
+  ],
+  "findings": [],
+  "size": "1440x900",
+  "overflowX": false,
+  "stress": {
+   "hero": "split",
+   "maxChars": 45,
+   "chars": 44,
+   "lines": 3,
+   "height": 900
+  }
+ },
+ {
+  "vw": 820,
+  "vh": 1180,
+  "L": 48,
+  "R": 772,
+  "nav": 72,
+  "screen": 1180,
+  "hero": {
+   "height": 1180,
+   "h1": {
+    "size": 49.184,
+    "leading": 1.02,
+    "lines": 2,
+    "x": 48,
+    "y": 158,
+    "w": 429,
+    "h": 100
+   },
+   "lead": {
+    "size": 18.2352,
+    "lineHeight": 27.3528,
+    "lines": 3,
+    "x": 48,
+    "y": 282,
+    "w": 429,
+    "h": 82
+   },
+   "buttons": {
+    "n": 2,
+    "h": 44,
+    "first": {
+     "x": 48,
+     "y": 396,
+     "w": 157,
+     "h": 44
+    }
+   },
+   "visual": {
+    "x": 48,
+    "y": 488,
+    "w": 724,
+    "h": 628
+   }
+  },
+  "sections": [
+   {
+    "where": "section.hero.hero--split section.hero.hero--split \"About DominicA student ofsystems\"",
+    "top": 0,
+    "height": 1180,
+    "content": 996,
+    "frame": 0
+   },
+   {
+    "where": "#education section.section \"The education so far.I’m interes\"",
+    "top": 1180,
+    "height": 1180,
+    "content": 642,
+    "frame": 1180
+   },
+   {
+    "where": "#skills section.section \"Tools I’ve worked with.Programmi\"",
+    "top": 2360,
+    "height": 1180,
+    "content": 621,
+    "frame": 2360
+   },
+   {
+    "where": "#personal-interests section.section.interests-section \"Outside the editor.Music, guitar\"",
+    "top": 3540,
+    "height": 1180,
+    "content": 994,
+    "frame": 3540
+   },
+   {
+    "where": "#music section.section.statement \"Also in the mix: music.Outside t\"",
+    "top": 4720,
+    "height": 1180,
+    "content": 332,
+    "frame": 4720
+   }
+  ],
+  "findings": [],
+  "size": "820x1180",
+  "overflowX": false,
+  "stress": {
+   "hero": "split",
+   "maxChars": 45,
+   "chars": 44,
+   "lines": 2,
+   "height": 1180
+  }
+ },
+ {
+  "vw": 390,
+  "vh": 844,
+  "L": 24,
+  "R": 366,
+  "nav": 56,
+  "screen": 844,
+  "hero": {
+   "height": 844,
+   "h1": {
+    "size": 40.28,
+    "leading": 1.02,
+    "lines": 2,
+    "x": 24,
+    "y": 132,
+    "w": 342,
+    "h": 82
+   },
+   "lead": {
+    "size": 17.0054,
+    "lineHeight": 25.5081,
+    "lines": 4,
+    "x": 24,
+    "y": 238,
+    "w": 342,
+    "h": 102
+   },
+   "buttons": {
+    "n": 1,
+    "h": 44,
+    "first": {
+     "x": 24,
+     "y": 372,
+     "w": 342,
+     "h": 44
+    }
+   },
+   "visual": {
+    "x": 24,
+    "y": 460,
+    "w": 342,
+    "h": 360
+   }
+  },
+  "sections": [
+   {
+    "where": "section.hero.hero--split section.hero.hero--split \"About DominicA student ofsystems\"",
+    "top": 0,
+    "height": 844,
+    "content": 724,
+    "frame": 0
+   },
+   {
+    "where": "#education section.section \"The education so far.I’m interes\"",
+    "top": 844,
+    "height": 969,
+    "content": 825,
+    "frame": 844
+   },
+   {
+    "where": "#skills section.section \"Tools I’ve worked with.Programmi\"",
+    "top": 1813,
+    "height": 844,
+    "content": 693,
+    "frame": 1813
+   },
+   {
+    "where": "#personal-interests section.section.interests-section \"Outside the editor.Music, guitar\"",
+    "top": 2657,
+    "height": 974,
+    "content": 902,
+    "frame": 2657
+   },
+   {
+    "where": "#music section.section.statement \"Also in the mix: music.Outside t\"",
+    "top": 3631,
+    "height": 844,
+    "content": 405,
+    "frame": 3631
+   }
+  ],
+  "findings": [],
+  "size": "390x844",
+  "overflowX": false,
+  "stress": {
+   "hero": "split",
+   "maxChars": 45,
+   "chars": 44,
+   "lines": 3,
+   "height": 844
+  }
+ }
+]

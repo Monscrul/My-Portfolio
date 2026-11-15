@@ -1,6 +1,6 @@
 # Dominic Yap — Personal Portfolio
 
-An editorial, responsive personal portfolio. White content sections alternate with a bright blue introduction, lemon-yellow achievements, warm gold details, and a pink contact section. Typography, thin separators, and alternating project layouts keep the content easy to scan. Built as static HTML with shared Node.js templates and structured content. No production packages, UI framework, tracking, or client-side router.
+A blue, black, and white portfolio with Newsreader headlines, Hanken Grotesk body text, real project imagery, and a shared responsive design system. Built as static HTML with Node.js templates and structured content. No production packages, tracking, or client-side router.
 
 ## Local development
 
@@ -20,26 +20,28 @@ npm run preview # Build and serve the production output locally
 
 ## Structure
 
-- `src/content/site.mjs`: profile, projects, experience, awards, and skills.
+- `src/content/site.mjs`: profile, projects, project presentation, experience, awards, skills, and interests.
 - `src/templates.mjs`: shared shell, navigation, footer, page templates, and case studies.
-- `src/assets/`: responsive styles, progressive mobile menu, favicon, social image, and locally hosted project screenshots and logos.
+- `src/assets/style.css`: client palette and portfolio-specific presentation.
+- `src/assets/kit/`: unmodified design-taste-frontend system, layout, motion, and word-highlight modules.
+- `src/assets/images/`: locally hosted real project captures and organization logos.
 - `ASSETS.md`: image provenance, official logo sources, and replacement guidance.
 - `scripts/build.mjs`: dependency-free static generator.
 - `scripts/serve.mjs`: local server, rebuild watcher, and real 404 responses.
 - `tests/site.test.mjs`: generated-site integrity checks.
 - `dist/`: generated output; do not edit directly.
 
-Pages: Home, About, Projects, Experience, Contact, three project case studies, and a 404 page. Each route is a directory with an `index.html`, so direct links work on static hosts. Project routes are generated from the content array. Add a project object following the existing fields to generate its case study and index entries.
+Pages: Home, About, Projects, Experience, Contact, three project case studies, and a 404 page. Each route is a directory with an `index.html`, so direct links work on static hosts. Project routes are generated from the content array. Add a project object following the existing fields and a matching `projectLooks` entry to generate its case study and index entries. Case-study themes in `style.css` use the project slug as their scope.
 
 ## Complete before publishing
 
-1. In `src/content/site.mjs`, provide the real `email`, `github`, `linkedin`, and `resume` values. Missing values intentionally render as inactive text. Put the résumé PDF under `src/assets/` and set `resume` to `/assets/resume.pdf`.
-2. Set `profile.url` to the final production origin. This enables canonical URLs, Open Graph URL/image metadata, and a sitemap. A 1200×630 sharing image is included at `src/assets/social-card.png`; update it if the headline changes.
-3. Add real BasuraScan screenshots; its cover remains a labeled editorial placeholder. Carlee and Rush Gym Wear now use optimized screenshots captured directly from their live sites, and Carlee includes gameplay and result views. Set a project’s `cover` and `screenshots` fields in the content file to add or replace images without changing the template. Images include descriptive alt text, intrinsic dimensions, and lazy loading below the fold. See `ASSETS.md` for image sources.
-4. Confirm each project’s technologies, process, important decisions, challenges, outcomes, and current status. The `missing` prompts and “To be completed” notices are intentional. Replace these with first-hand details, then update the case-study template to render confirmed content.
+1. Review the email, GitHub, and LinkedIn URLs extracted from the supplied résumé in `src/content/site.mjs`. The supplied résumé is available under `src/assets/documents/`.
+2. Set `profile.url` to the final production origin. This enables canonical URLs, Open Graph URL/image metadata, and a sitemap. A sharing image is included at `src/assets/social-card.png`; update it if the headline changes.
+3. Add real BasuraScan screenshots; its supplied app icon is displayed as branding, not an application screenshot. Carlee and Rush Gym Wear now use optimized screenshots captured directly from their live sites, and Carlee includes gameplay and result views. Set a project’s `cover` and `screenshots` fields in the content file to add or replace images without changing the template. Images include descriptive alt text, intrinsic dimensions, and lazy loading below the fold. See `ASSETS.md` for image sources.
+4. Confirm Carlee and Rush Gym Wear’s technologies, process, important decisions, challenges, outcomes, and current status. BasuraScan now uses the supplied research paper and poster, including the limits of its validation results. The `missing` prompts and “To be completed” notices are intentional. Supply verified text in a project’s `details` fields to replace its `missing` prompts.
 5. Add verified experience dates and order entries chronologically. They are currently grouped by leadership, client work, and research, with that limitation disclosed.
 6. Review the listed areas of technical experience. The brief supplies these areas, but no proficiency level or project-specific stack is asserted.
-7. Confirm the supplied achievement and education wording. Add BasuraScan team attribution, approved research links, and any publication details if available.
+7. Confirm the supplied achievement and education wording. BasuraScan includes the supplied team attribution and local research documents; add publication details if available.
 8. Add the Microsoft Student Community website only after its scope, contribution, screenshots, and links are confirmed.
 9. Check permission to publish client imagery and research material. Verify the two supplied live project URLs before public launch.
 
@@ -51,21 +53,17 @@ The templates use root-relative URLs, so deploy at the domain root. A GitHub Pag
 
 ## Design and accessibility
 
-The reference palette is defined in `src/assets/theme.css`: blue `#268fff`, lemon `#ffff45`, gold `#ffd15b`, and pink `#fb0064`. Dark text is used on saturated surfaces for contrast, with white backgrounds around the work and experience details. The theme file is loaded after the layout styles, so palette and motion adjustments stay separate from responsive layout rules.
+The palette is defined in `src/assets/style.css`: blue, black, and white remain the base, with pale-blue surfaces, citron highlights, and a mint interests section. Case-study themes are scoped by `data-project`: Carlee uses midnight/blue, BasuraScan green/ivory, and Rush black/red. Full-width surfaces preserve aligned content edges on ultrawide screens. The static generator and all existing routes remain in place. The responsive layout stress check passes at 1440×900, 1024×768, 820×1180, 768×1024, and 390×844.
 
-Entrances last 400–500 ms, and selected project and milestone sections receive a small one-time reveal. Links and buttons use short hover transitions. Content is never hidden pending a scroll observer. Reduced-motion preferences disable CSS and JavaScript animations, including when the preference changes during a visit.
+Newsreader handles the main portfolio’s display type; Hanken Grotesk handles body copy and controls, and also the Carlee/Rush display headings. Fonts currently load from Google Fonts with fallbacks. Kit files under `src/assets/kit/` are copied without modification; project CSS is separate.
 
-Two font families: DM Sans and IBM Plex Mono, with system fallbacks. Fonts currently load through Google Fonts; self-host them if you prefer no external font requests. Content and navigation render without JavaScript. The menu supports keyboard use, expanded state, Escape, and focus return. Focus rings, a skip link, semantic landmarks, reduced-motion styles, and active navigation are included. All missing contact links remain inactive; there is no nonfunctional contact form.
+Motion uses the skill’s entrance and hover layer and its dealt word-highlight moment. The project preview changes on hover or keyboard focus. About includes a native, keyboard-accessible interests accordion covering music, guitar, cars, movies, and anime; the contextual guitar photo is credited in its footer. There are no generic section fades, timed carousels, parallax, animation libraries, or WebGL effects. Reduced-motion preferences show the content at rest. There is no nonfunctional contact form; missing contact links stay inactive.
 
 Automated checks supplement manual review. They do not constitute a complete accessibility audit. Before public launch, review final screenshots, keyboard behavior, screen-reader output, link destinations, and the completed content.
 
 ## Verification performed
 
-- Production build and five automated integrity tests passed.
-- Installed Chrome checked all eight content routes at 375, 768, and 1440 pixels: no horizontal overflow or page JavaScript errors.
-- Browser checks covered opening the mobile menu, Escape and focus return, visible navigation without JavaScript, reduced-motion scrolling, and the missing-page response.
-- Reviewed full-page mobile homepage and desktop case-study screenshots.
-- Both supplied live project URLs returned HTTP 200; Rush Gym Wear redirects to its `www` domain.
+The production build and five integrity tests pass. The redesign is also reviewed with the design-taste-frontend skill’s browser tools. See `.taste-skill/REPORT.md` for the final check results, waivers, and remaining content requirements; earlier design screenshots and responsive results do not substitute for that redesign report.
 
 The portfolio is prepared locally and has not been published to a host.
 

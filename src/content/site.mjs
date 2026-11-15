@@ -3,10 +3,10 @@ export const profile = {
   fullName: "Dominic John S. Yap",
   role: "Information Systems student & software developer",
   location: "Cebu City, Philippines",
-  email: null,
-  github: null,
-  linkedin: null,
-  resume: null,
+  email: "dominicjohnyap2007@gmail.com",
+  github: "https://github.com/Monscrul",
+  linkedin: "https://www.linkedin.com/in/dominic-john-yap-63665b25a/",
+  resume: "/assets/documents/dominic-yap-resume.pdf",
   // Set the production origin before publishing, e.g. https://your-domain.com.
   url: null,
 };
@@ -108,23 +108,30 @@ export const projects = [
       "Explore the application of AI to recyclable and non-recyclable waste classification.",
     role: "Research & development contributor",
     contribution:
-      "I handled dataset preparation, contributed to the research writing, and managed the project. These responsibilities supported both the application and its research foundation.",
+      "I prepared and augmented image datasets, contributed to the research writing, managed the project, and evaluated classification performance. This was a team research project at San Carlos School of Cebu with Chaz Eldrake Ong, Ela Jhoanna Bugas, Ethan Bernward Remo, Sariah Haley Mata, and Constance Dino Kintanar.",
     live: null,
+    cover: {
+      image: "basurascan-icon.png",
+      kind: "icon",
+      alt: "BasuraScan app icon: a green waste bin with white scan brackets and a red dot.",
+    },
+    details: {
+      technologies: "The team built the mobile application with JavaScript, React Native, and SQLite. Model training used Python and PyTorch, with a pretrained EfficientNet-B3 network adapted for two waste classes.",
+      process: "The study combined 23,589 images from three public Kaggle datasets, grouped them into recyclable and non-recyclable categories, and applied resizing, normalization, and training augmentation. Model validation and Android usability testing were evaluated separately.",
+      decisions: "Transfer learning adapted EfficientNet-B3 to the two-class task. The training pipeline used class-weighted loss to address imbalance. Local storage and offline functionality supported use without a continuous internet connection.",
+      challenges: "Dataset diversity, class imbalance, and mobile hardware constraints shaped the work. Augmentation introduced variation in lighting and orientation. The paper recommends broader local waste data and further on-device classification evaluation.",
+    },
+    poster: { image: "basurascan-poster.jpg", href: "/assets/documents/basurascan-research-poster.pdf", width: 1100, height: 1466, alt: "BasuraScan research poster presenting the team, methods, app interface, and study results." },
+    documents: [
+      { href: "/assets/documents/basurascan-research-paper.pdf", label: "Read research paper" },
+      { href: "/assets/documents/basurascan-research-poster.pdf", label: "View research poster" },
+    ],
     visual: "basurascan",
     visualTitle: "A closer look at waste.",
     visualSubtitle: "Mobile waste classification research",
     status:
-      "Research project. Add the study outcome, application status, and any approved publication links.",
-    missing: {
-      technologies:
-        "Confirm the mobile framework, model, training tools, and data services used.",
-      process:
-        "Describe the dataset sources, preparation steps, research method, and team workflow.",
-      decisions:
-        "Explain a verified choice about data labeling, model selection, or mobile integration.",
-      challenges:
-        "Describe a dataset or project coordination challenge and how the team addressed it.",
-    },
+      "The study reports approximately 98–99% validation accuracy during model training. Android testing assessed usability and offline functionality; real-world classification accuracy on deployed devices was not directly measured. This is an academic research prototype, with no public app download linked.",
+
   },
   {
     slug: "rush-gym-wear",
@@ -213,3 +220,18 @@ export const skills = [
     "Applied machine learning workflows, dataset preparation, research writing, project management",
   ],
 ];
+
+
+export const interests = [
+  { name: "Music", text: "I produce music and perform under the artist name dojosaya." },
+  { name: "Guitar", text: "I play guitar as another way to make music outside coding." },
+  { name: "Cars", text: "Cars are an interest I also explore through Carlee, my daily car-guessing game." },
+  { name: "Movies", text: "I enjoy watching movies when I take a break from building things." },
+  { name: "Anime", text: "Anime is also part of what I enjoy outside technology." },
+];
+
+export const projectLooks = {
+  carlee: { heroScreenshot: 0, title: "Carlee.<br>Guess today’s car.", overview: "A daily puzzle for car people.", development: "Under Carlee’s hood." },
+  basurascan: { title: "BasuraScan.<br>Waste, classified.", overview: "Waste classification, through research.", development: "From dataset to mobile application." },
+  "rush-gym-wear": { title: "Rush Gym Wear.", overview: "A web presence for Rush.", development: "Building the brand’s website." },
+};

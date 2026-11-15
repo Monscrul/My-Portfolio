@@ -1,0 +1,144 @@
+[
+ {
+  "vw": 1440,
+  "vh": 900,
+  "L": 80,
+  "R": 1360,
+  "nav": 72,
+  "screen": 900,
+  "hero": {
+   "height": 900,
+   "h1": {
+    "size": 67.84,
+    "leading": 1.02,
+    "lines": 2,
+    "x": 80,
+    "y": 158,
+    "w": 519,
+    "h": 138
+   },
+   "lead": {
+    "size": 20,
+    "lineHeight": 30,
+    "lines": 3,
+    "x": 80,
+    "y": 320,
+    "w": 470,
+    "h": 90
+   },
+   "buttons": {
+    "n": 1,
+    "h": 44,
+    "first": {
+     "x": 80,
+     "y": 442,
+     "w": 157,
+     "h": 44
+    }
+   },
+   "visual": {
+    "x": 732,
+    "y": 120,
+    "w": 628,
+    "h": 716
+   }
+  },
+  "sections": [
+   {
+    "where": "section.hero.hero--split section.hero.hero--split \"ContactDevelopment& collaboratio\"",
+    "top": 0,
+    "height": 900,
+    "content": 716,
+    "frame": 0
+   },
+   {
+    "where": "#interests section.section.statement \"The work I’m interested in.Pract\"",
+    "top": 900,
+    "height": 900,
+    "content": 645,
+    "frame": 900
+   }
+  ],
+  "findings": [],
+  "size": "1440x900",
+  "overflowX": false,
+  "stress": {
+   "hero": "split",
+   "maxChars": 45,
+   "chars": 45,
+   "lines": 3,
+   "height": 900
+  }
+ },
+ {
+  "vw": 390,
+  "vh": 844,
+  "L": 24,
+  "R": 366,
+  "nav": 56,
+  "screen": 844,
+  "hero": {
+   "height": 844,
+   "h1": {
+    "size": 40.28,
+    "leading": 1.02,
+    "lines": 2,
+    "x": 24,
+    "y": 132,
+    "w": 342,
+    "h": 82
+   },
+   "lead": {
+    "size": 17.0054,
+    "lineHeight": 25.5081,
+    "lines": 4,
+    "x": 24,
+    "y": 238,
+    "w": 342,
+    "h": 102
+   },
+   "buttons": {
+    "n": 1,
+    "h": 44,
+    "first": {
+     "x": 24,
+     "y": 372,
+     "w": 342,
+     "h": 44
+    }
+   },
+   "visual": {
+    "x": 24,
+    "y": 460,
+    "w": 342,
+    "h": 276
+   }
+  },
+  "sections": [
+   {
+    "where": "section.hero.hero--split section.hero.hero--split \"ContactDevelopment& collaboratio\"",
+    "top": 0,
+    "height": 844,
+    "content": 640,
+    "frame": 0
+   },
+   {
+    "where": "#interests section.section.statement \"The work I’m interested in.Pract\"",
+    "top": 844,
+    "height": 844,
+    "content": 514,
+    "frame": 844
+   }
+  ],
+  "findings": [],
+  "size": "390x844",
+  "overflowX": false,
+  "stress": {
+   "hero": "split",
+   "maxChars": 45,
+   "chars": 45,
+   "lines": 3,
+   "height": 844
+  }
+ }
+]

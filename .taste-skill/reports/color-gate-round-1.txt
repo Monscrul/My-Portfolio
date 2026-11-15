@@ -1,0 +1,13 @@
+gate: checking dist/index.html (service); this takes a few minutes on a CPU Chrome
+gate: 2 FAIL open
+  FAIL off-grid         div.grid.work-preview > div.span-5 > div.work-list > article.work-row.card:nth-of-type(1)   [1440, 390]
+       left edge at 95px, 15px off the page margin at 80px (24 elements, like a.project-title-link.m-link); 1 more in this section off the grid too (article.work-row.card:nth-of-type(2) at 95px)
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL container-edges  div.wrap > div.hero-text.grid > div.hero__text.span-5 > p.hero__kicker "Software developer  [1440]
+       1 text block starts on a left line at x 107, 27px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (SR-6)
+       fix: start the text on the container's left, or on the one split line every split shares
+  WAIVED no-visual section#experience "Experience & competitions.": This section documents student leadership, freelance work, and named 2025 awards, rather than product features. Its sourced organization logos and real client screenshot are intentional evidence. Inventing team photographs or enlarging a logo wall would conflict with the original brief's authenticity and restrained achievement presentation.
+  WAIVED copy-headings section#selected-work > div.wrap > div.section-head > h2 "Selected projects.": The grouped finding treats supplied proper project names (Carlee, BasuraScan, Rush Gym Wear), the actual Acting Vice President of Technology role, and the standard portfolio heading Selected projects as unnamed products. These names and titles come from the user's original brief and are intentionally preserved.
+  11 WARN (not blocking), first: scroll-reveal section#about > div.wrap > p.mo-wh__text; section-gaps main#main > section.hero.hero--split / s; photo-set div.hero-text.grid > div.hero__media.spa; nav-labels header.nav.nav--centre > div.wrap.nav__b; grounds section#selected-work "Selected projects
+A FAIL you judge false: add {"check": "<id>", "target": "<its where, enough to name that one finding>", "reason": "<why, 12+ characters>"} to .taste-skill/waivers.json (one finding each, 5 at most, never for kit-edited or checker-gaming); it goes in your report. Never edit the kit's files or hide the page from the checker.
+GATE: FAIL 2 (round 1 of 3)

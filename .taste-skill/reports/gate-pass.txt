@@ -1,0 +1,6 @@
+gate: checking dist/index.html (service); this takes a few minutes on a CPU Chrome
+gate: no open FAIL
+  WAIVED no-visual section#experience "Experience & competitions.": This section documents student leadership, freelance work, and named 2025 awards, rather than product features. Its sourced organization logos and real client screenshot are intentional evidence. Inventing team photographs or enlarging a logo wall would conflict with the original brief's authenticity and restrained achievement presentation.
+  WAIVED copy-headings section#selected-work > div.wrap > div.section-head > h2 "Selected projects.": The grouped finding treats supplied proper project names (Carlee, BasuraScan, Rush Gym Wear), the actual Acting Vice President of Technology role, and the standard portfolio heading Selected projects as unnamed products. These names and titles come from the user's original brief and are intentionally preserved.
+  8 WARN (not blocking), first: scroll-reveal section#about > div.wrap > p.mo-wh__text; same-action section#about > div.wrap > div.statement; section-gaps main#main > section.hero.hero--split / s; section-gaps section#selected-work / section#experien; nav-labels header.nav.nav--centre > div.wrap.nav__b
+GATE: PASS

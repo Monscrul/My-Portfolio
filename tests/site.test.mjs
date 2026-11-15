@@ -70,16 +70,13 @@ test("case studies distinguish real screenshots, editorial artwork, and missing 
       `dist/projects/${project.slug}/index.html`,
       "utf8",
     );
-    assert.ok(
-      html.includes(
-        project.cover
-          ? `/assets/images/${project.cover.image}`
-          : "not a product screenshot",
-      ),
-    );
+    const suppliedImages = [project.cover, ...(project.screenshots || [])].filter(Boolean);
+    assert.ok(suppliedImages.length
+      ? suppliedImages.some(asset => html.includes(`/assets/images/${asset.image}`))
+      : html.includes("not a product screenshot"), project.slug);
     if (project.cover) assert.ok(!html.includes("editorial placeholder"));
     for (const text of [
-      "To be completed",
+      ...(project.details ? [] : ["To be completed"]),
       "Technologies used",
       "Development process",
       "Technical decisions",
