@@ -272,14 +272,14 @@ footer.closing { --bg: #1754ef; --surface: #1754ef; }
 }
 
 /* Colour rhythm: a clear reading surface, with deliberate changes of ground. */
-html:not([data-project]) { --p-surface: #eaf0fa; }
-html:not([data-project]) .hero { background: #e5edff; }
-html:not([data-project]) .home-hero .accent-text { color: #113ec2; background: #ecff80; box-decoration-break: clone; -webkit-box-decoration-break: clone; padding-inline: .06em; }
+html:not([data-project]) { --p-surface: #1754ef; }
+html:not([data-project]) .hero { background: #1754ef; }
+html:not([data-project]) .home-hero .accent-text { color: #113ec2; background: #ffed00; box-decoration-break: clone; -webkit-box-decoration-break: clone; padding-inline: .06em; }
 html:not([data-project]) #experience,
 html[data-page="about"] #skills,
-html[data-page="experience"] #achievements { background: #eaf0fa; }
-html[data-page="home"] #about { background: #efff9b; }
-html[data-page="projects"] #basurascan { background: #e8f4ed; }
+html[data-page="experience"] #achievements { background: #1754ef; }
+html[data-page="home"] #about { background: #0F172A; --bg: #0F172A; --ink: #ffffff; --muted: #cbd5e1; --accent: #93c5fd; --line: #475569; color: #ffffff; }
+html[data-page="projects"] #basurascan { background: #00ce72; }
 html[data-page="about"] #music,
 html[data-page="contact"] #interests { background: #fff; }
 .section-head h2 { text-wrap: balance; }
@@ -291,20 +291,20 @@ html[data-page="contact"] #interests { background: #fff; }
 .work-row:nth-child(3) .t-label::after { background: #d92520; }
 
 /* Interests are an accessible accordion; each row works with touch and keyboard. */
-.interests-section { background: #e6f0e9; }
+.interests-section { background: #00ce72; }
 .interests-layout { align-items: start; }
 .interests-layout .t-lead { max-width: 36ch; }
 .interest-photo { overflow: hidden; border-radius: var(--r-lg); margin-top: var(--s-6); height: 330px; }
 .interest-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.interest-item { border-bottom: 1px solid #b7cec0; }
-.interest-item:first-child { border-top: 1px solid #b7cec0; }
+.interest-item { border-bottom: 1px solid #087544; }
+.interest-item:first-child { border-top: 1px solid #087544; }
 .interest-item summary { display: flex; align-items: center; gap: var(--s-4); min-height: 76px; cursor: pointer; list-style: none; }
 .interest-item summary::-webkit-details-marker { display: none; }
 .interest-item summary:focus-visible { outline: 2px solid #1754ef; outline-offset: 4px; }
 .interest-item summary:hover h3 { color: #1754ef; }
 .interest-item h3 { margin: 0; }
 .interest-number { font-size: var(--t-label); color: #2e5441; }
-.interest-toggle { margin-left: auto; display: inline-grid; place-items: center; width: 32px; height: 32px; background: #efff9b; color: #173321; border-radius: 50%; font-size: 24px; }
+.interest-toggle { margin-left: auto; display: inline-grid; place-items: center; width: 32px; height: 32px; background: #ffed00; color: #173321; border-radius: 50%; font-size: 24px; }
 .interest-item[open] .interest-toggle { background: #1754ef; color: #fff; }
 .interest-item[open] .interest-toggle { font-size: 0; }
 .interest-item[open] .interest-toggle::after { content: '−'; font-size: 24px; }
@@ -335,11 +335,11 @@ html[data-project="carlee"] .development-note { border-top: 1px solid #2a3b55; p
 html[data-project="carlee"] footer.closing { --bg: #1754ef; --surface: #1754ef; }
 
 html[data-project="basurascan"] {
-  --p-bg: #f5faf6; --p-surface: #e4f1e7; --p-ink: #132d22; --p-muted: #496657;
+  --p-bg: #ffffff; --p-surface: #00ce72; --p-ink: #132d22; --p-muted: #496657;
   --p-accent: #08763d; --p-accent-ink: #fff; --p-action: #08763d; --p-action-ink: #fff;
 }
-html[data-project="basurascan"] .case-hero { background: #e4f1e7; }
-html[data-project="basurascan"] #development { background: #e4f1e7; }
+html[data-project="basurascan"] .case-hero { background: #00ce72; }
+html[data-project="basurascan"] #development { background: #00ce72; }
 html[data-project="basurascan"] .project-frame--icon { border: 1px solid #bfd9c8; }
 html[data-project="basurascan"] .development-note { border-top: 1px solid #bfd9c8; padding-top: var(--s-4); }
 html[data-project="basurascan"] footer.closing { --bg: #08763d; --surface: #08763d; --action-ink: #08763d; background: #08763d; --line: #4a9870; --muted: #e3f3e9; }
@@ -381,3 +381,129 @@ html[data-page="about"] .skills-list > div { padding-block: 28px; }
 .interest-photo img[data-source="client"] { object-position: 50% 42%; }
 @media (max-width: 1023px) { #music-photos { height: auto; min-height: 100svh; } #music-photos > .wrap { height: auto; } .music-photo-grid img { height: auto; } }
 @media (max-width: 639px) { .music-photo-grid { grid-template-columns: 1fr; } }
+
+/* Saturated bands use their own contrast tokens, including their controls. */
+html:not([data-project]) .hero,
+html:not([data-project]) #experience,
+html[data-page="about"] #skills,
+html[data-page="experience"] #achievements {
+  --bg: #1754ef; --surface: #1754ef; --ink: #fff; --muted: #fff;
+  --accent: #ffed00; --action: #ffed00; --action-ink: #111;
+  --line: #7194ff; --line-strong: #c4d2ff; color: #fff;
+}
+html:not([data-project]) .hero .btn--secondary { background: #fff; color: #111; }
+html:not([data-project]) .hero .hero__kicker::after { background: #ffed00; }
+.contact-sheet { --bg: #fff; --ink: #111; --muted: #444; --line: #ccc; background: #fff; color: #111; }
+.interests-section { --bg: #00ce72; --ink: #062d1a; color: #062d1a; }
+.interest-number { color: #123d27; }
+html[data-project="basurascan"] .case-hero,
+html[data-project="basurascan"] #development,
+html[data-page="projects"] #basurascan { --bg: #00ce72; --ink: #062d1a; --muted: #123d27; color: #062d1a; }
+html:not([data-project]) .profile-sheet { background: #093bba; }
+/* Overlapping previews retain one stable frame during a user-triggered crossfade. */
+.work-preview__visual.has-crossfade { display: grid; isolation: isolate; }
+.work-preview__visual.has-crossfade > [data-peek-for] {
+  grid-area: 1 / 1; opacity: 0; pointer-events: none;
+  transition: opacity 280ms ease-in-out;
+}
+.work-preview__visual.has-crossfade > .is-active { opacity: 1; pointer-events: auto; z-index: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .work-preview__visual.has-crossfade > [data-peek-for] { transition: none; }
+}
+
+/* HOME: animated statement text colours.
+   BEFORE = words that have not been reached by the scroll.
+   AFTER = revealed words. ACCENT AFTER = revealed bold phrase. */
+html[data-page="home"] #about {
+  --statement-before: #94a3b8;
+  --statement-after: #ffffff;
+  --statement-accent-after: #93c5fd;
+}
+html[data-page="home"] #about .mo-wh__text { color: var(--statement-after); }
+html[data-page="home"] #about .mo-w { color: var(--statement-before); }
+html[data-page="home"] #about .mo-w.is-on { color: var(--statement-after); }
+html[data-page="home"] #about strong .mo-w.is-on { color: var(--statement-accent-after); }
+@media (prefers-reduced-motion: reduce) {
+  html[data-page="home"] #about .mo-w { color: var(--statement-after); }
+  html[data-page="home"] #about strong .mo-w { color: var(--statement-accent-after); }
+}
+/* Experience and awards share the top edge without a duplicate project image. */
+html[data-page="home"] #experience .awards { gap: var(--s-6); }
+@media (max-width: 1023px) {
+  html[data-page="home"] #experience { --h: 1; --hm: 1; height: auto; min-height: 100svh; }
+  html[data-page="home"] #experience > .wrap { height: auto; }
+}
+
+/* About interests: navy background with readable accordion labels. */
+html[data-page="about"] #personal-interests {
+  background: #0F172A; --bg: #0F172A; --ink: #ffffff;
+  --muted: #cbd5e1; --accent: #93c5fd; color: #ffffff;
+}
+html[data-page="about"] #personal-interests .interest-number { color: #cbd5e1; }
+html[data-page="about"] #personal-interests .interest-item { border-color: #475569; }
+html[data-page="about"] #personal-interests summary:hover h3 { color: #93c5fd; }
+html[data-page="about"] #personal-interests summary:focus-visible { outline-color: #93c5fd; }
+
+/* About: on-stage and band photo gallery. */
+html[data-page="about"] #music-photos {
+  background: #1754ef;
+  --bg: #1754ef;
+  --ink: #ffffff;
+  --muted: #ffffff;
+  color: #ffffff;
+}
+/* Supplied transparent chapter logo, presented on a white tile. */
+.brand-mark--msc { background: #fff; padding: 8px; }
+@media (min-width: 1024px) {
+  html[data-page="home"] #experience .experience-row .brand-mark--msc { display: inline-flex; margin-top: 12px; }
+}
+
+/* BasuraScan's index action follows the project's green identity. */
+html[data-page="projects"] #basurascan {
+  --action: #08763d;
+  --action-ink: #ffffff;
+}
+.experience-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+.experience-heading h3 { min-width: 0; }
+.experience-row .experience-heading .brand-mark--msc,
+html[data-page="home"] #experience .experience-row .experience-heading .brand-mark--msc {
+  display: inline-flex; margin: 0; width: 88px; height: 68px;
+  flex: 0 0 88px; background: #ffffff; padding: 8px;
+}
+@media (max-width: 639px) {
+  .experience-heading { gap: 12px; }
+  .experience-row .experience-heading .brand-mark--msc,
+  html[data-page="home"] #experience .experience-row .experience-heading .brand-mark--msc {
+    width: 64px; height: 52px; flex-basis: 64px;
+  }
+}
+
+/* Leadership logo follows the same tile dimensions and row alignment as awards. */
+.experience-row.experience-row--msc {
+  position: relative; grid-template-columns: minmax(0, 1fr) 140px;
+  column-gap: var(--s-5); align-items: center;
+}
+.experience-row--msc > div { grid-column: 1; }
+.experience-row--msc > .brand-mark--msc,
+html[data-page="home"] #experience .experience-row--msc > .brand-mark--msc {
+  display: inline-flex; grid-column: 2; grid-row: 1 / span 2;
+  align-self: center; width: 140px; height: 56px;
+  padding: var(--s-3); margin: 0;
+}
+@media (max-width: 639px) {
+  .experience-row.experience-row--msc { grid-template-columns: minmax(0, 1fr) 104px; column-gap: 16px; }
+  .experience-row--msc > .brand-mark--msc,
+  html[data-page="home"] #experience .experience-row--msc > .brand-mark--msc {
+    width: 104px; height: 48px;
+  }
+  .experience-row--msc > div:first-child { display: block; }
+}
+
+/* Animate same-page anchor navigation (See projects, See experience, Read project).
+   Native anchor handling preserves URL fragments, keyboard focus, and browser history. */
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+/* Keep the accessibility shortcut immediate. */
+html:has(.skip-link:focus) { scroll-behavior: auto; }

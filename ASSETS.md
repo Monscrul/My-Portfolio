@@ -61,3 +61,7 @@ The case studies now use colours drawn from their real products: Carlee midnight
 ## Personal music photos
 
 The supplied `ARTIST.png` and `CARACALS_BAND.png` are locally optimized as `dominic-performing.jpg` and `caracals-band.jpg`. About now uses the actual performance photograph instead of the contextual stock guitar photo, and shows both supplied images after the music text. Original colours and the band poster artwork are preserved. The Spotify screenshot is visible in the conversation but its local file and artist URL have not yet been located; it has not been fabricated or replaced with a guessed link.
+
+Palette revision: washed-out blue, mint, and citron grounds were replaced with solid cobalt (#1754ef), vivid green (#00ce72), and yellow (#ffed00). Blue sections use white text and yellow actions; white reading sections remain. Original photograph and screenshot colours are preserved.
+
+Microsoft Student Community: `msc-logo.png` is a resized copy of the supplied transparent `MSC-SC LOGO.png`. It appears on a white tile in the leadership entry, replacing the university logo for that role. The USC logo remains in education. No chapter website link has been guessed.

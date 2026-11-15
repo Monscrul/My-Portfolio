@@ -25,7 +25,7 @@ export async function build() {
     [
       "/",
       "Home",
-      "Dominic Yap is an Information Systems student and software developer in Cebu. Explore independent projects, applied AI research, and technical leadership.",
+      "Information Systems student and software developer building web applications, interactive digital experiences, and practical technology solutions.",
       home(),
       "/",
     ],
@@ -80,6 +80,7 @@ export async function build() {
       layout({ title, description, path, content, section }),
     );
   }
+  await cp(resolve(root, "src/assets/social-card.png"), resolve(dist, "og-image.png"));
   await cp(resolve(dist, "404/index.html"), resolve(dist, "404.html"));
   if (profile.url) {
     const urls = pages
