@@ -35,7 +35,7 @@ Pages: Home, About, Projects, Experience, Contact, three project case studies, a
 
 ## Complete before publishing
 
-1. Review the email, GitHub, and LinkedIn URLs extracted from the supplied résumé in `src/content/site.mjs`. The supplied résumé is available under `src/assets/documents/`.
+1. Review the email, GitHub, and LinkedIn URLs extracted from the supplied resume in `src/content/site.mjs`. The supplied resume is available under `src/assets/documents/`.
 2. Set `profile.url` to the final production origin. This enables canonical URLs, Open Graph URL/image metadata, and a sitemap. A sharing image is included at `src/assets/social-card.png`; update it if the headline changes.
 3. Add real BasuraScan screenshots; its supplied app icon is displayed as branding, not an application screenshot. Carlee and Rush Gym Wear now use optimized screenshots captured directly from their live sites, and Carlee includes gameplay and result views. Set a project’s `cover` and `screenshots` fields in the content file to add or replace images without changing the template. Images include descriptive alt text, intrinsic dimensions, and lazy loading below the fold. See `ASSETS.md` for image sources.
 4. Confirm Carlee and Rush Gym Wear’s technologies, process, important decisions, challenges, outcomes, and current status. BasuraScan now uses the supplied research paper and poster, including the limits of its validation results. The `missing` prompts and “To be completed” notices are intentional. Supply verified text in a project’s `details` fields to replace its `missing` prompts.

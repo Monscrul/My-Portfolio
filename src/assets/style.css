@@ -227,7 +227,7 @@ footer.closing { --bg: #1754ef; --surface: #1754ef; }
 @media (max-width: 639px) {
   #experience { --hm: 2; height: auto; min-height: calc(2 * 100lvh); }
   .experience-proof-image .project-frame { height: clamp(320px, 60lvh, 500px); }
-  #education, #overview, #outcome, #roles, #development { height: auto; min-height: 100lvh; }
+  #education, #overview, #outcome, #development { height: auto; min-height: 100lvh; }
   #education > .wrap, #overview > .wrap, #outcome > .wrap, #roles > .wrap, #development > .wrap { height: auto; }
   .screenshot-gallery { gap: calc(var(--padt) + var(--padb) + var(--s-8)); }
   .screenshot-gallery img { height: calc(100lvh - var(--padt) - var(--padb) - var(--s-10)); }
@@ -507,3 +507,92 @@ html { scroll-behavior: smooth; }
 }
 /* Keep the accessibility shortcut immediate. */
 html:has(.skip-link:focus) { scroll-behavior: auto; }
+
+/* Paper for reading, coloured light for the hero and feature bands. */
+:root {
+  --paper-surface: url("paper-grain.svg"), radial-gradient(ellipse at top left, #fff 15%, #faf8f2 75%, #f3eee3);
+  --blue-light: radial-gradient(ellipse at 88% 4%, #2c60f0, #1754ef 42%, #163bbb 85%, #152e96);
+  --navy-light: radial-gradient(ellipse at 88% 6%, #233c65, #192942 40%, #0f172a 82%);
+  --green-light: radial-gradient(ellipse at 88% 5%, #77f9ae, #28e187 40%, #00ce72 77%, #00bd68);
+}
+
+html:not([data-project]) :is(#selected-work, #education, #roles, #music, #interests, #approach, #research, #carlee, #rush-gym-wear),
+html[data-project="basurascan"] :is(#overview, #outcome) {
+  background-color: #faf8f2;
+  background-image: var(--paper-surface);
+}
+
+html:not([data-project]) :is(.hero, #experience),
+html[data-page="about"] :is(#skills, #music-photos),
+html[data-page="experience"] #achievements,
+footer.closing {
+  background-image: var(--blue-light);
+}
+
+html[data-page="home"] #about,
+html[data-page="about"] #personal-interests,
+html[data-project="carlee"] :is(.case-hero, #overview, #outcome) {
+  background-image: var(--navy-light);
+}
+
+html[data-page="projects"] #basurascan,
+html[data-project="basurascan"] :is(.case-hero, #development) {
+  background-image: var(--green-light);
+}
+
+html[data-project="rush-gym-wear"] :is(.case-hero, #overview, #outcome) {
+  background-image: radial-gradient(ellipse at 88% 5%, #4b1e20, #30181a 40%, #111 84%);
+}
+
+html[data-project="basurascan"] footer.closing {
+  background-image: radial-gradient(ellipse at top right, #08763d, #076234 45%, #053e24 90%);
+}
+
+html[data-project="rush-gym-wear"] footer.closing {
+  background-image: radial-gradient(ellipse at top right, #a91f19, #821d19 45%, #491513 90%);
+}
+
+/* Keep the full-screen mobile menu outside the backdrop-filter containing block. */
+@media (min-width: 1024px) {
+  @supports ((backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px))) {
+    .nav {
+      background: color-mix(in srgb, var(--bg) 90%, transparent);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+    }
+  }
+}
+
+.hero__media {
+  box-shadow: 0 0 0 1px rgb(255 255 255 / .24), 0 16px 36px rgb(8 17 43 / .22);
+}
+.hero-portrait { border-color: rgb(255 255 255 / .66); }
+.hero__media:has(.contact-sheet) { background: transparent; }
+.contact-sheet {
+  --bg: #f4f8ff;
+  --accent: #1754ef;
+  --action: #1754ef;
+  --line: #819bc8;
+  --line-strong: #6d81a4;
+  background: linear-gradient(145deg, #fff, rgb(226 238 255 / .85));
+  border-radius: inherit;
+}
+
+/* Highlight the preview's active row and open accordion panel without moving the text. */
+.work-row.card {
+  background-image: linear-gradient(90deg, #1754ef12, transparent 85%);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+}
+.work-row.card:is(.is-on, :focus-within) { background-size: 100% 100%; }
+.interest-item[open] > summary {
+  background: linear-gradient(90deg, transparent 24%, #93c5fd24);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .work-row.card { transition: background-size 240ms ease; }
+  .interest-item summary h3 { transition: color 180ms ease; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .nav { background: var(--bg); -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .contact-sheet { background: var(--bg); }
+}

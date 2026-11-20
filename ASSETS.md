@@ -42,11 +42,11 @@ Organization logos use the `brands` dictionary in the same content file. Their l
 The portfolio’s own palette is blue, black, and white. Original third-party screenshots and logos retain their colors. Screenshots have local 640px and 1280px derivatives selected through `srcset`; originals remain available for full-size viewing. Logos were reduced to a maximum width of 280px for their actual display size. There are no captions under project images in the redesigned interface; provenance remains in this document. The later content update adds the supplied BasuraScan app icon and Dominic’s real portrait; no imagery is fabricated.
 
 
-## Supplied portrait, résumé, and research update
+## Supplied portrait, resume, and research update
 
 - `dominic-yap.jpg`: original supplied `pfp2.jpeg` (1209 × 1195); `dominic-yap-640.jpg` is its responsive derivative. Homepage hero only, with the original colours preserved.
 - `basurascan-icon.png`: resized to 800 × 800 from the supplied `basurascan.png`. Used as the actual app identity, with contain sizing. The additional supplied `basurascanlogo.png` was not duplicated in the interface.
-- `documents/dominic-yap-resume.pdf`: supplied résumé, unchanged. Email and social URLs were extracted from its text and PDF link annotations. Phone number is not copied into the interface.
+- `documents/dominic-yap-resume.pdf`: supplied resume, unchanged. Email and social URLs were extracted from its text and PDF link annotations. Phone number is not copied into the interface.
 - `documents/basurascan-research-paper.pdf` and `documents/basurascan-research-poster.pdf`: supplied research documents, unchanged. Stack and methods follow Chapter 3; dataset size follows Appendix C; validation results and limitations follow Chapters 4–5. Results are attributed to the study, not claimed as real-world accuracy. Team authors are credited in the case study.
 - The documents contain differing usability summaries, so a single SUS result is not promoted as a portfolio metric. No public app release or peer-reviewed publication is asserted.
 
